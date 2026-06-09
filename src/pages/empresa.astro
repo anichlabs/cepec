@@ -1,0 +1,95 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Nuestra Empresa | CEPEC SpA">
+
+  <!-- Hero -->
+  <section class="py-12 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Nuestra Empresa</span>
+        <h1 class="text-5xl font-black text-white mt-2 mb-6">Quiénes somos</h1>
+        <p class="text-xl text-slate-300 leading-relaxed">
+          CEPEC significa Centro de Estudios, Proyectos y Construcción. Nace con el propósito de integrar capacidades de ingeniería, construcción y gestión de proyectos bajo una visión orientada a la excelencia operacional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reseña ejecutiva -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div>
+          <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Reseña Ejecutiva</span>
+          <h2 class="text-4xl font-black text-slate-900 mt-2 mb-6">Una empresa construida sobre experiencia real</h2>
+          <p class="text-slate-600 leading-relaxed mb-4">
+            Durante su trayectoria, CEPEC ha participado en el desarrollo de obras civiles, proyectos de infraestructura, mantenimiento industrial y procesos de licitación, construyendo relaciones de largo plazo con organismos públicos y empresas privadas.
+          </p>
+          <p class="text-slate-600 leading-relaxed mb-4">
+            Su modelo de trabajo combina experiencia técnica, innovación y una red de alianzas estratégicas que permiten abordar proyectos de diversa complejidad con los más altos estándares de calidad y seguridad.
+          </p>
+          <p class="text-slate-600 leading-relaxed mb-8">
+            Operamos desde la Región de Valparaíso con cobertura nacional, atendiendo tanto al sector público como al privado, con especial fortaleza en licitaciones públicas y proyectos de mediana y gran escala.
+          </p>
+          <a href="/contacto" class="inline-flex items-center px-6 py-3 text-sm font-bold text-white bg-gradient-to-r from-blue-700 to-blue-900 rounded-xl hover:from-blue-800 hover:to-slate-800 transition-all shadow-lg">
+            Trabaja con nosotros
+          </a>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Misión</h3>
+            <p class="text-slate-600 leading-relaxed">Entregar soluciones integrales en construcción e ingeniería mediante una gestión eficiente de recursos, altos estándares de calidad y un fuerte compromiso con la seguridad y el desarrollo sostenible.</p>
+          </div>
+          <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Visión</h3>
+            <p class="text-slate-600 leading-relaxed">Ser reconocidos como una organización líder en el desarrollo y ejecución de proyectos de construcción e ingeniería, destacando por nuestro profesionalismo, capacidad técnica e innovación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores -->
+  <section class="py-16 bg-slate-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Lo que nos define</span>
+        <h2 class="text-4xl font-black text-slate-900 mt-2 mb-4">Nuestros Valores</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        {['Responsabilidad', 'Transparencia', 'Compromiso', 'Respeto', 'Trabajo en equipo', 'Calidad', 'Seguridad'].map((valor) => (
+          <div class="px-6 py-3 bg-blue-50 rounded-lg text-blue-800 font-semibold text-sm">
+            {valor}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+  </section>
+
+
+  <!-- Trabaja con nosotros -->
+  <section class="py-12 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Únete al equipo</span>
+        <h2 class="text-4xl font-black text-white mt-2 mb-6">Trabaja con nosotros</h2>
+        <p class="text-slate-300 leading-relaxed mb-10">¿Eres profesional del área de construcción, ingeniería o gestión de proyectos? Queremos conocerte. Envíanos tu información y te contactaremos cuando surja una oportunidad.</p>
+        <form class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" placeholder="Nombre completo" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 transition-colors" />
+            <input type="email" placeholder="Correo electrónico" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 transition-colors" />
+          </div>
+          <input type="text" placeholder="Especialidad (ej: Ingeniero Civil, Arquitecto, Topógrafo...)" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 transition-colors" />
+          <textarea rows="4" placeholder="Cuéntanos sobre tu experiencia" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 transition-colors resize-none"></textarea>
+          <button type="submit" class="inline-flex items-center px-8 py-3 text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 rounded-xl shadow-lg transition-all">
+            Enviar postulación
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

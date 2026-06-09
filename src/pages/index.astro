@@ -1,24 +1,175 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import PremiumHero from '../components/home/PremiumHero.astro';
-import ServiceHighlights from '../components/home/ServiceHighlights.astro';
-import ImageGrid from '../components/home/ImageGrid.astro';
-import StatsShowcase from '../components/home/StatsShowcase.astro';
-import IndustriesServed from '../components/home/IndustriesServed.astro';
-import TechnologyInnovation from '../components/home/TechnologyInnovation.astro';
-import ProcessWorkflow from '../components/home/ProcessWorkflow.astro';
-import Testimonials from '../components/home/Testimonials.astro';
-import PremiumCTA from '../components/home/PremiumCTA.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Hero from '@components/home/Hero.astro';
 ---
 
-<BaseLayout>
-  <PremiumHero />
-  <ServiceHighlights />
-  <ImageGrid />
-  <IndustriesServed />
-  <TechnologyInnovation />
-  <ProcessWorkflow />
-  <StatsShowcase />
-  <Testimonials />
-  <PremiumCTA />
+<BaseLayout title="CEPEC SpA | Centro de Estudios, Proyectos y Construcción">
+  <Hero />
+
+  <!-- Quiénes Somos -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Quiénes Somos</span>
+          <h2 class="text-4xl font-black text-slate-900 mt-2 mb-6">Ingeniería, construcción y gestión de proyectos bajo una sola visión</h2>
+          <p class="text-slate-600 leading-relaxed mb-4">CEPEC SpA es una empresa chilena especializada en el estudio, desarrollo y ejecución de proyectos de construcción e ingeniería. Nuestra experiencia combina capacidades técnicas, gestión operativa y una sólida trayectoria en proyectos públicos y privados.</p>
+          <p class="text-slate-600 leading-relaxed mb-8">Trabajamos bajo principios de calidad, responsabilidad, transparencia y compromiso, priorizando el cumplimiento de plazos, la optimización de recursos y la seguridad laboral en cada proyecto que ejecutamos.</p>
+          <div class="grid grid-cols-2 gap-6 mb-8">
+            <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
+              <div class="text-2xl font-black text-blue-700 mb-1">Desde 2014</div>
+              <div class="text-slate-600 text-sm">Trayectoria comprobada</div>
+            </div>
+            <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
+              <div class="text-2xl font-black text-blue-700 mb-1">Nacional</div>
+              <div class="text-slate-600 text-sm">Cobertura de proyectos</div>
+            </div>
+          </div>
+          <a href="/empresa" class="inline-flex items-center px-6 py-3 text-sm font-bold text-white bg-gradient-to-r from-blue-700 to-blue-900 rounded-xl hover:from-blue-800 hover:to-slate-800 transition-all shadow-lg">Conocer más sobre CEPEC</a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="/src/assets/obras-viales-pavimentacion-chile.jpg" alt="Obras viales" class="rounded-2xl h-64 w-full object-cover" />
+          <img src="/src/assets/obras-civiles-muro-contencion-chile.jpg" alt="Obras civiles" class="rounded-2xl h-64 w-full object-cover mt-8" />
+          <img src="/src/assets/edificacion-construccion-residencial-chile.jpg" alt="Edificación" class="rounded-2xl h-64 w-full object-cover -mt-8" />
+          <img src="/src/assets/industria-mineria-infraestructura-chile.jpg" alt="Industria" class="rounded-2xl h-64 w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Indicadores -->
+  <section class="py-8 bg-slate-900">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-black text-blue-400 mb-2">+10</div>
+          <div class="text-slate-400 text-sm">Años de experiencia</div>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-blue-400 mb-2">+50</div>
+          <div class="text-slate-400 text-sm">Proyectos ejecutados</div>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-blue-400 mb-2">4</div>
+          <div class="text-slate-400 text-sm">Alianzas estratégicas</div>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-blue-400 mb-2">DS1</div>
+          <div class="text-slate-400 text-sm">y DS49 SERVIU</div>
+        </div>
+        <div>
+          <div class="text-4xl font-black text-blue-400 mb-2">100%</div>
+          <div class="text-slate-400 text-sm">Compromiso con la calidad</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="py-12 bg-slate-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Lo que hacemos</span>
+        <h2 class="text-4xl font-black text-slate-900 mt-2 mb-4">Nuestros Servicios</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">Soluciones integrales en construcción e ingeniería, con foco en calidad, eficiencia operativa y cumplimiento de plazos.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all">
+          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Obras Civiles</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Obras viales, portuarias, fluviales, marítimas, patrimoniales y estructurales. Experiencia sólida en sector público y privado.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all">
+          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Edificación</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Proyectos habitacionales, institucionales y comerciales. DS1 y DS49. Empresa patrocinante SERVIU.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all">
+          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Prevención, Mantención y Emergencia</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Mantención preventiva y correctiva, atención de emergencias y recuperación de infraestructura.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all">
+          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Soluciones para Industria y Minería</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Infraestructura industrial, montajes, obras complementarias y proyectos para minería.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all">
+          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Empresa Patrocinante SERVIU</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Formulación, gestión documental y tramitación técnica bajo DS1 y DS49. Acompañamiento integral.</p>
+        </div>
+        <div class="bg-gradient-to-br from-blue-700 to-slate-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all">
+          <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Unidad de Estudios y Licitaciones</h3>
+          <p class="text-white/80 text-sm leading-relaxed mb-6">Generamos propuestas técnicas y económicas en tiempo récord, apalancadas con inteligencia artificial y análisis de profesionales especialistas.</p>
+          <a href="/estudios" class="inline-flex items-center text-white font-bold text-sm hover:underline">Conocer más →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alianzas -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Red de trabajo</span>
+        <h2 class="text-4xl font-black text-slate-900 mt-2 mb-4">Alianzas Estratégicas</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">Operamos como UTP (Unión Temporal de Proveedores) con empresas líderes para ampliar nuestra oferta y capacidad de respuesta en proyectos complejos.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="border border-slate-200 rounded-2xl p-8 hover:border-blue-300 hover:shadow-md transition-all">
+          <img src="/images/logo-mys-constructora.jpeg" alt="MyS" class="h-14 object-contain mb-6" />
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Constructora MyS</h3>
+          <p class="text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">Filial principal</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Principal brazo constructor de CEPEC. Ejecución de obras civiles, edificación e infraestructura industrial.</p>
+        </div>
+        <div class="border border-slate-200 rounded-2xl p-8 hover:border-blue-300 hover:shadow-md transition-all">
+          <div class="mb-6"><span class="text-lg font-black text-slate-900">Anich</span><span class="text-lg font-black text-blue-600">Labs</span><span class="text-sm font-semibold text-slate-500"> OÜ</span></div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2"><a href="https://anichlabs.com" target="_blank" class="hover:underline">AnichLabs OÜ</a></h3>
+          <p class="text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">Tecnología e IA</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Socio tecnológico de la Unidad de Estudios. IA aplicada a licitaciones y documentación técnica.</p>
+        </div>
+        <div class="border border-slate-200 rounded-2xl p-8 hover:border-blue-300 hover:shadow-md transition-all">
+          <img src="/images/logo-incos.jpeg" alt="INCOS" class="h-14 object-contain mb-6" />
+          <h3 class="text-xl font-bold text-slate-900 mb-2"><a href="https://incoss.cl/" target="_blank" class="hover:underline">INCOS</a></h3>
+          <p class="text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">Alianza estratégica</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Alianza en estudios y desarrollo de obras civiles. Complementamos capacidades técnicas para abordar proyectos de mayor escala.</p>
+        </div>
+        <div class="border border-slate-200 rounded-2xl p-8 hover:border-blue-300 hover:shadow-md transition-all">
+          <img src="/images/logo-planic.jpeg" alt="Planic" class="h-14 object-contain mb-6" />
+          <h3 class="text-xl font-bold text-slate-900 mb-2"><a href="https://datalux.cl/empresa/77728212-3-planic-ingenieria-en-construccion-spa/" target="_blank" class="hover:underline">Planic SpA</a></h3>
+          <p class="text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">Ingeniería y arquitectura</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Alianza en ingeniería, arquitectura e infraestructura telemática. Unidos como UTP para proyectos multidisciplinarios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-12 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-4xl font-black text-white mb-6">Transformamos proyectos en resultados.</h2>
+        <p class="text-slate-300 text-xl mb-10 leading-relaxed">Nuestro equipo está listo para ayudarte a desarrollar tu proyecto con precisión técnica, respaldo profesional y compromiso total.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/contacto" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 rounded-xl shadow-xl transition-all">Contactar un especialista</a>
+          <a href="/estudios" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white border-2 border-white/30 hover:border-blue-400 hover:text-blue-400 rounded-xl transition-all">Unidad de Estudios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </BaseLayout>

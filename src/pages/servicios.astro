@@ -1,0 +1,135 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Servicios | CEPEC SpA">
+
+  <section class="py-12 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Lo que hacemos</span>
+        <h1 class="text-5xl font-black text-white mt-2 mb-6">Nuestros Servicios</h1>
+        <p class="text-xl text-slate-300 leading-relaxed">Soluciones integrales en construcción e ingeniería para el sector público y privado. Desde el estudio técnico hasta la ejecución en terreno.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white" id="obras-civiles">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Servicio 01</span>
+          <h2 class="text-4xl font-black text-slate-900 mt-2 mb-6">Obras Civiles</h2>
+          <p class="text-slate-600 leading-relaxed mb-8">Diseño, planificación y ejecución de obras civiles para clientes públicos y privados. Contamos con experiencia comprobada en obras de diversa escala y complejidad técnica, con especial fortaleza en licitaciones públicas.</p>
+          <div class="grid grid-cols-2 gap-3">
+            {['Obras viales', 'Obras portuarias', 'Obras fluviales', 'Obras marítimas', 'Obras patrimoniales', 'Obras estructurales'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></div>
+                <span class="text-slate-700 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <img src="/src/assets/obras-civiles-muro-contencion-chile.jpg" alt="Obras civiles Chile" class="rounded-2xl h-80 w-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-slate-100" id="edificacion">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <img src="/src/assets/servicio-edificacion-cepec.jpeg" alt="Edificación Chile" class="rounded-2xl h-80 w-full object-cover order-2 lg:order-1" />
+        <div class="order-1 lg:order-2">
+          <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Servicio 02</span>
+          <h2 class="text-4xl font-black text-slate-900 mt-2 mb-6">Edificación</h2>
+          <p class="text-slate-600 leading-relaxed mb-8">Desarrollo de proyectos de edificación de pequeña, mediana y gran escala para el sector habitacional, institucional y comercial. Empresa patrocinante SERVIU con registro activo DS1 y DS49.</p>
+          <div class="grid grid-cols-2 gap-3">
+            {['Vivienda', 'Infraestructura institucional', 'Infraestructura comercial', 'Remodelaciones', 'Ampliaciones', 'DS1 y DS49 SERVIU'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></div>
+                <span class="text-slate-700 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white" id="prevencion">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Servicio 03</span>
+          <h2 class="text-4xl font-black text-slate-900 mt-2 mb-6">Prevención, Mantención y Emergencia</h2>
+          <p class="text-slate-600 leading-relaxed mb-8">Servicios orientados a garantizar la continuidad operacional y la seguridad de la infraestructura. Respondemos con rapidez y precisión ante situaciones de emergencia constructiva.</p>
+          <div class="grid grid-cols-2 gap-3">
+            {['Mantención preventiva', 'Mantención correctiva', 'Atención de emergencias', 'Recuperación de infraestructura', 'Servicios de contingencia', 'Diagnóstico técnico'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></div>
+                <span class="text-slate-700 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <img src="/src/assets/servicio-prevencion-emergencia-cepec.jpeg" alt="Prevención y emergencia" class="rounded-2xl h-80 w-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-slate-100" id="industria">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <img src="/src/assets/servicio-industria-mineria-cepec.jpeg" alt="Industria y minería" class="rounded-2xl h-80 w-full object-cover order-2 lg:order-1" />
+        <div class="order-1 lg:order-2">
+          <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Servicio 04</span>
+          <h2 class="text-4xl font-black text-slate-900 mt-2 mb-6">Soluciones para Industria y Minería</h2>
+          <p class="text-slate-600 leading-relaxed mb-8">Desarrollo de proyectos especializados para sectores industriales y mineros. Infraestructura robusta, adaptada a los requerimientos normativos y operacionales de cada cliente.</p>
+          <div class="grid grid-cols-2 gap-3">
+            {['Infraestructura industrial', 'Montajes', 'Obras complementarias', 'Adecuaciones normativas', 'Proyectos para minería', 'Infraestructura telemática'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></div>
+                <span class="text-slate-700 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white" id="serviu">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Servicio 05</span>
+          <h2 class="text-4xl font-black text-slate-900 mt-2 mb-6">Empresa Patrocinante SERVIU</h2>
+          <p class="text-slate-600 leading-relaxed mb-8">CEPEC cuenta con registro activo como empresa patrocinante SERVIU. Acompañamos integralmente a familias, cooperativas y organizaciones en el acceso a subsidios habitacionales bajo los programas DS1 y DS49.</p>
+          <div class="grid grid-cols-2 gap-3">
+            {['Formulación de proyectos', 'Gestión documental', 'Tramitación técnica', 'Acompañamiento integral', 'DS1', 'DS49'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></div>
+                <span class="text-slate-700 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <img src="/src/assets/servicio-serviu-vivienda-cepec.jpeg" alt="Proyectos SERVIU" class="rounded-2xl h-80 w-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Servicio estrella</span>
+        <h2 class="text-4xl font-black text-white mt-2 mb-6">Unidad de Estudios y Licitaciones</h2>
+        <p class="text-slate-300 text-xl leading-relaxed mb-10">Generamos propuestas técnicas y económicas en tiempo récord, apalancadas con inteligencia artificial y el análisis de profesionales especialistas.</p>
+        <a href="/estudios" class="inline-flex items-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 rounded-xl shadow-xl transition-all">
+          Ver Unidad de Estudios
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,130 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Alianzas Estratégicas | CEPEC SpA">
+
+  <section class="py-12 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Red de trabajo</span>
+        <h1 class="text-5xl font-black text-white mt-2 mb-6">Alianzas Estratégicas</h1>
+        <p class="text-xl text-slate-300 leading-relaxed">Operamos como UTP (Unión Temporal de Proveedores) con empresas y organizaciones especializadas para ampliar nuestra capacidad técnica y de respuesta en proyectos de diversa complejidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <span class="text-blue-700 font-semibold text-sm uppercase tracking-wider">Por qué trabajamos en red</span>
+        <h2 class="text-4xl font-black text-slate-900 mt-2 mb-6">El modelo UTP como ventaja competitiva</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">La Unión Temporal de Proveedores permite a empresas especializadas unirse para abordar proyectos de mayor complejidad, ampliar la oferta de servicios y mejorar la competitividad en licitaciones públicas y privadas.</p>
+        <p class="text-slate-600 leading-relaxed">CEPEC lidera una red de alianzas que cubre tecnología, inteligencia artificial, construcción, ingeniería civil y telemática.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AnichLabs -->
+  <section class="py-16 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-300 text-xs font-bold uppercase tracking-wider mb-4">Alianza principal - Tecnología e IA</div>
+          <h2 class="text-4xl font-black text-white mb-6"><a href="https://anichlabs.com" target="_blank" class="hover:underline">AnichLabs OÜ</a></h2>
+          <p class="text-slate-300 leading-relaxed mb-4">AnichLabs OÜ es la alianza más importante de CEPEC. Potencia directamente la Unidad de Estudios y Licitaciones mediante herramientas avanzadas de inteligencia artificial, automatización documental y análisis de datos aplicado a proyectos reales.</p>
+          <p class="text-slate-300 leading-relaxed mb-8">Gracias a esta alianza, CEPEC genera documentación técnica y económica en tiempo récord, con altos estándares de calidad y trazabilidad en cada entregable.</p>
+          <div class="grid grid-cols-2 gap-3 mb-8">
+            {['Inteligencia artificial aplicada', 'Automatización documental', 'Análisis avanzado de datos', 'Optimización de licitaciones', 'Herramientas digitales para ingeniería', 'Innovación en construcción'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-purple-400 shrink-0"></div>
+                <span class="text-slate-300 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+          <a href="/estudios" class="inline-flex items-center px-6 py-3 text-sm font-bold text-white bg-gradient-to-r from-purple-600 to-blue-700 hover:from-purple-700 hover:to-blue-800 rounded-xl shadow-lg transition-all">Ver Unidad de Estudios</a>
+        </div>
+        <img src="/src/assets/banner-anichlabs.png" alt="AnichLabs OÜ" class="rounded-2xl h-80 w-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- MyS -->
+  <section class="py-16 bg-slate-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-xs font-bold uppercase tracking-wider mb-4">Filial constructora principal</div>
+          <h2 class="text-4xl font-black text-slate-900 mb-6">Constructora MyS</h2>
+          <p class="text-slate-600 leading-relaxed mb-4">MyS es la filial constructora más importante de CEPEC. Especializada en la ejecución directa de obras civiles, edificación e infraestructura industrial, MyS es el brazo operativo que materializa los proyectos desarrollados por la Unidad de Estudios.</p>
+          <p class="text-slate-600 leading-relaxed mb-8">Con equipos propios, personal técnico calificado y experiencia comprobada desde 2014, MyS garantiza ejecución con altos estándares de calidad, seguridad y cumplimiento de plazos.</p>
+          <div class="grid grid-cols-2 gap-3">
+            {['Obras civiles', 'Edificación', 'Infraestructura industrial', 'Ejecución de proyectos', 'Obras públicas', 'Obras privadas'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></div>
+                <span class="text-slate-700 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <img src="/src/assets/banner-mys-constructora.png" alt="Constructora MyS" class="rounded-2xl h-80 w-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Planic -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <img src="/src/assets/banner-planic.png" alt="Planic SpA" class="rounded-2xl h-80 w-full object-cover order-2 lg:order-1" />
+        <div class="order-1 lg:order-2">
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">Ingeniería y arquitectura</div>
+          <h2 class="text-4xl font-black text-slate-900 mb-6"><a href="https://datalux.cl/empresa/77728212-3-planic-ingenieria-en-construccion-spa/" target="_blank" class="hover:underline">Planic SpA</a></h2>
+          <p class="text-slate-600 leading-relaxed mb-4">Planic es una empresa especializada en ingeniería y arquitectura con amplia trayectoria en proyectos multidisciplinarios. La alianza con CEPEC permite abordar proyectos que requieren capacidades técnicas combinadas en construcción, electricidad, instrumentación y telecomunicaciones.</p>
+          <p class="text-slate-600 leading-relaxed mb-8">Participamos conjuntamente mediante UTP en licitaciones que requieren mayor capacidad técnica y financiera.</p>
+          <div class="grid grid-cols-2 gap-3">
+            {['Ingeniería civil', 'Ingeniería minera', 'Infraestructura telemática', 'Arquitectura', 'Estudios de especialidad', 'Proyectos multidisciplinarios'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></div>
+                <span class="text-slate-700 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCOS -->
+  <section class="py-16 bg-slate-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase tracking-wider mb-4">Obras civiles</div>
+          <h2 class="text-4xl font-black text-slate-900 mb-6">INCOS</h2>
+          <p class="text-slate-600 leading-relaxed mb-4">INCOS es una consultora especializada en el estudio y desarrollo de obras civiles. Su equipo de ingenieros aporta profundidad técnica y capacidad de análisis en proyectos de infraestructura de mediana y gran escala.</p>
+          <p class="text-slate-600 leading-relaxed mb-8">La alianza con INCOS complementa las capacidades técnicas de CEPEC, permitiendo abordar proyectos con mayor exigencia en el área de ingeniería civil especializada.</p>
+          <div class="grid grid-cols-2 gap-3 mb-8">
+            {['Ingeniería civil', 'Estudios técnicos', 'Desarrollo de proyectos', 'Asesoría especializada', 'Obras de infraestructura', 'Consultoría técnica'].map((item) => (
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></div>
+                <span class="text-slate-700 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+          <a href="https://incoss.cl/" target="_blank" class="inline-flex items-center px-6 py-3 text-sm font-bold text-white bg-gradient-to-r from-blue-700 to-blue-900 rounded-xl hover:from-blue-800 hover:to-slate-800 transition-all shadow-lg">Visitar incoss.cl</a>
+        </div>
+        <img src="/src/assets/banner-incos.png" alt="INCOS" class="rounded-2xl h-80 w-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-black text-slate-900 mb-6">¿Quieres trabajar con nosotros?</h2>
+      <p class="text-slate-600 text-xl max-w-2xl mx-auto mb-10">Si tu empresa tiene capacidades complementarias y te interesa explorar una alianza estratégica, conversemos.</p>
+      <a href="/contacto" class="inline-flex items-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-800 hover:to-slate-800 rounded-xl shadow-xl transition-all">Contactar a CEPEC</a>
+    </div>
+  </section>
+
+</BaseLayout>
