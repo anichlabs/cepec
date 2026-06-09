@@ -1,209 +1,81 @@
-# AstroFlow - Logistics & Manufacturing Website Template
+# CEPEC SpA — Corporate Website
 
-A modern, professional Astro.js template for logistics, manufacturing, and supply chain companies. Built with React, Tailwind CSS, and TypeScript.
+Official corporate website for **CEPEC SpA** (Centro de Estudios, Proyectos y Construcción), a Chilean construction and engineering company based in the Región de Valparaíso.
 
-![Astro](https://img.shields.io/badge/Astro-5.16.0-FF5D01?logo=astro&logoColor=white)
-![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.17-38B2AC?logo=tailwind-css&logoColor=white)
+Developed by [AnichLabs OÜ](https://anichlabs.com) as part of its digital infrastructure services.
 
-## 🖼️ Preview
+---
 
-### Website Screenshot
-<img alt="AstroFlow Website Preview" src="./public/AstroFlow - Astrojs Logistics & Manufacturing Website Template.png" />
+## Tech Stack
 
-### Performance & Speed
-<img alt="Performance Metrics" src="./public/speed-metrics.png" />
+- [Astro](https://astro.build/) 6.4.4 — static site generator
+- [React](https://react.dev/) — component islands
+- [Tailwind CSS](https://tailwindcss.com/) — utility-first styling
+- Based on the [AstroFlow](https://github.com/your-template-source) template
 
-## ✨ Features
+## Pages
 
-- 🚀 **Built with Astro** - Fast, modern static site generation
-- ⚛️ **React Components** - Interactive components with React
-- 🎨 **Tailwind CSS 4** - Modern utility-first styling
-- 📱 **Fully Responsive** - Mobile-first design
-- ♿ **Accessible** - Built with accessibility in mind
-- 🎯 **SEO Optimized** - Meta tags and semantic HTML
-- 🎭 **Smooth Animations** - Powered by Motion library
-- 🎨 **Modern UI** - Beautiful gradient designs and components
+| Route | Description |
+|---|---|
+| `/` | Inicio — homepage |
+| `/empresa` | Nuestra Empresa |
+| `/servicios` | Servicios |
+| `/estudios` | Unidad de Estudios |
+| `/alianzas` | Alianzas Estratégicas |
+| `/galeria` | Galería |
+| `/contacto` | Contáctanos |
 
-## 📦 Pages Included
+## Local Development
 
-- **Home** - Hero section, features, stats, testimonials
-- **Capabilities** - Service offerings showcase
-- **Use Cases** - Industry-specific solutions
-- **Facilities** - Location and facility information
-- **Request Quote (RFQ)** - Contact form for quotes
-- **Documentation** - Resources and guides
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js 18+ and npm
-
-### Installation
-
-1. Clone this repository:
-```bash
-git clone https://github.com/yourusername/astroflow.git
-cd astroflow
-```
-
-2. Install dependencies:
 ```bash
 npm install
-```
-
-3. Start the development server:
-```bash
 npm run dev
 ```
 
-4. Open [http://localhost:4321](http://localhost:4321) in your browser
+Site runs at `http://localhost:4321`.
 
-## 📝 Configuration
-
-### Site Configuration
-
-Update `src/config/site.ts` with your information:
-
-```typescript
-export const SITE = {
-  title: 'Your Company Name', // TODO: Replace with your company name
-  description: 'Your company description', // TODO: Update with your description
-  url: 'https://yourdomain.com', // TODO: Replace with your actual domain
-  author: 'Your Company Name', // TODO: Replace with your company name
-} as const;
-
-export const SOCIAL_LINKS = {
-  linkedin: 'https://linkedin.com/company/yourcompany', // TODO: Replace with your LinkedIn
-  twitter: 'https://twitter.com/yourcompany', // TODO: Replace with your Twitter
-  facebook: 'https://facebook.com/yourcompany', // TODO: Replace with your Facebook
-} as const;
-```
-
-### Form Integration
-
-The RFQ form (`src/components/react/RFQForm.tsx`) currently logs form data to the console. To integrate with a backend:
-
-1. **Option 1: Form Service** (Recommended for static sites)
-   - Use [Formspree](https://formspree.io/), [Netlify Forms](https://www.netlify.com/products/forms/), or similar
-   - Update the `handleSubmit` function in `RFQForm.tsx`
-
-2. **Option 2: Custom API**
-   - Create an API endpoint
-   - Update the form submission handler
-
-Example with Formspree:
-```typescript
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  const formData = new FormData(e.currentTarget);
-  
-  const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-    method: 'POST',
-    body: formData,
-    headers: { 'Accept': 'application/json' }
-  });
-  
-  if (response.ok) {
-    // Show success message
-  }
-};
-```
-
-## 🛠️ Available Scripts
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:4321`     |
-| `npm run build`        | Build your production site to `./dist/`         |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-
-## 📁 Project Structure
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets/          # Images and static assets
-│   ├── components/      # Reusable components
-│   │   ├── home/        # Home page components
-│   │   ├── react/       # React interactive components
-│   │   └── ui/          # UI components
-│   ├── config/          # Configuration files
-│   ├── layouts/         # Page layouts
-│   ├── pages/           # Astro pages (routes)
-│   ├── styles/          # Global styles
-│   └── utils/           # Utility functions
-├── astro.config.mjs     # Astro configuration
-├── package.json
-└── tsconfig.json
-```
-
-## 🎨 Customization
-
-### Colors
-
-The template uses Tailwind CSS. Customize colors in `src/styles/global.css` or update Tailwind config.
-
-### Images
-
-Replace placeholder images in `src/assets/` with your own. The template includes stock photos as placeholders.
-
-### Content
-
-- Update text content in component files
-- Modify navigation in `src/config/site.ts`
-- Update facility information in `src/pages/facilities.astro`
-- Customize testimonials in `src/components/home/Testimonials.astro`
-
-## 🚢 Deployment
-
-### Build for Production
+## Build
 
 ```bash
 npm run build
 ```
 
-This creates a `dist/` folder with your static site.
+Output is generated in the `dist/` directory. This is a fully static build with no server-side rendering.
 
-### Deploy to Vercel
+## Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/astroflow)
+The site is deployed via GitHub Pages. Pushing to `main` triggers the build and deployment workflow automatically.
 
-### Deploy to Netlify
+The live site is served at [cepec.cl](https://cepec.cl).
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/astroflow)
+## Project Structure
 
-### Other Platforms
+```
+/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── tailwind.config.mjs
+└── package.json
+```
 
-The `dist/` folder can be deployed to any static hosting service:
-- GitHub Pages
-- Cloudflare Pages
-- AWS S3 + CloudFront
-- Any static hosting provider
+## Organisation
 
-## 📄 License
+CEPEC SpA is the parent company. Associated entities:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Constructora MyS** — primary construction filial
+- **AnichLabs OÜ** — technology and AI alliance (developer of this site)
+- **Planic SpA** — engineering alliance
+- **INCOS** — civil works alliance
 
+## Contact
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/astroflow/issues).
-
-## ⭐ Show Your Support
-
-If you find this template useful, please give it a star on GitHub!
-
-## 📧 Support
-
-For questions or support, please open an issue on GitHub.
+contacto@cepec.cl
 
 ---
 
-Built with ❤️ using [Astro](https://astro.build)
+© CEPEC SpA. Developed by [AnichLabs OÜ](https://anichlabs.com).
