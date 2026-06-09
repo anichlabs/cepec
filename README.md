@@ -1,4 +1,4 @@
-# CEPEC SpA — Corporate Website
+# CEPEC SpA - Corporate Website
 
 Official corporate website for **CEPEC SpA** (Centro de Estudios, Proyectos y Construcción), a Chilean construction and engineering company based in the Región de Valparaíso.
 
@@ -8,16 +8,16 @@ Developed by [AnichLabs OÜ](https://anichlabs.com) as part of its digital infra
 
 ## Tech Stack
 
-- [Astro](https://astro.build/) 6.4.4 — static site generator
-- [React](https://react.dev/) — component islands
-- [Tailwind CSS](https://tailwindcss.com/) — utility-first styling
+- [Astro](https://astro.build/) 6.4.4 - static site generator
+- [React](https://react.dev/) - component islands
+- [Tailwind CSS](https://tailwindcss.com/) - utility-first styling
 - Based on the [AstroFlow](https://github.com/your-template-source) template
 
 ## Pages
 
 | Route | Description |
 |---|---|
-| `/` | Inicio — homepage |
+| `/` | Inicio - homepage |
 | `/empresa` | Nuestra Empresa |
 | `/servicios` | Servicios |
 | `/estudios` | Unidad de Estudios |
@@ -67,10 +67,10 @@ The live site is served at [cepec.cl](https://cepec.cl).
 
 CEPEC SpA is the parent company. Associated entities:
 
-- **Constructora MyS** — primary construction filial
-- **AnichLabs OÜ** — technology and AI alliance (developer of this site)
-- **Planic SpA** — engineering alliance
-- **INCOS** — civil works alliance
+- **Constructora MyS** - primary construction filial
+- **AnichLabs OÜ** - technology and AI alliance (developer of this site)
+- **Planic SpA** - engineering alliance
+- **INCOS** - civil works alliance
 
 ## Contact
 
